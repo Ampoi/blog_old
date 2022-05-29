@@ -1,0 +1,1 @@
+__NUXT_JSONP__("manifest.js", {routes:["\u002F","\u002Fblogs\u002Fdiffcult-firebase-vue","\u002Fblogs\u002Fhow-to-change-icon-vue","\u002Fblogs\u002Fwhoami","\u002Fblogs\u002Fhello","\u002Fblogs\u002Flets-insert-icon-to-webapp2"]})
