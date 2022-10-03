@@ -3,9 +3,9 @@
     <div class="p-4">
       <p class="text-black/10 font-bold text-7xl">00</p>
       <div class="relative w-screen">
-        <h1 class="text-8xl font-bold font-[Poppins] text-center absolute top-0 left-0 w-screen">Ampoi's<br>portfolio</h1>
+        <h1 class="sm:text-8xl text-7xl font-bold font-[Poppins] text-center absolute top-0 left-0 w-screen">Ampoi's<br>portfolio</h1>
         <h1
-          class="text-8xl font-bold font-[Poppins] text-center absolute top-4 left-2 hover:top-6 hover:left-3 transition-all w-screen text-transparent"
+          class="sm:text-8xl text-7xl font-bold font-[Poppins] text-center absolute top-4 left-2 hover:top-6 hover:left-3 transition-all w-screen text-transparent"
           style="-webkit-text-stroke: 1px black"
         >Ampoi's<br>portfolio</h1>
       </div>
@@ -21,18 +21,18 @@
       </div>
       <div class="mt-4">
         <p class="ml-12">過去に作ったアプリとかWebサイトとか</p>
-        <div class="mt-8 w-[620px] h-[400px] grid grid-cols-3 grid-rows-2 mx-auto gap-8">
+        <div class="flex flex-row h-48 gap-8 overflow-y-visible overflow-x-auto mx-auto max-w-xl">
           <NuxtLink
             v-for="project in projects"
             :key="project.key"
-            class="text-black"
+            class="text-black mb-2"
             :to="project.link">
             <div
               class="w-full h-full border-white border-2 transition-all mt-2 ml-1.5"
             />
             <!--:class="{'mt-4': project.hoverd, 'ml-3': project.hoverd}"-->
             <div
-              class="bg-white w-full h-full p-4 -mt-[200px]"
+              class="bg-white w-full h-full p-4 px-8 -mt-[200px]"
             >
               <!--:class="{'-mt-52': project.hoverd}"-->
               <div
@@ -57,7 +57,7 @@
       </div>
     </div>
   </main>
-  <footer class="text-center">
+  <footer class="text-center my-8">
     Created By Ampoi
   </footer>
 </template>
@@ -74,10 +74,11 @@ export default {
   data(){return{
     projects: [
       {title: "ToBe", img: "https://cdn.discordapp.com/attachments/1012671960301437019/1016357910353289296/1_1.png", hoverd: false, link: "https://tobe.ampoi.net"},
+      {title: "Stask", img: "https://cdn.discordapp.com/attachments/1012671960301437019/1026463704323194880/touch_icon.png", hoverd: false, link: ""},
       {title: "KScord", img: "", hoverd: false, link: "https://github.com/ampoi/kscord"},
       {title: "URLMEMO", img: "", hoverd: false, link: "https://urlmemo.vercel.app"},
       {title: "131th KaijoFes", img: "https://cdn.discordapp.com/attachments/1012671960301437019/1012672014332465192/1.png", hoverd: false, link: "https://kaijofes.com"},
-      {title: "KStalk", img: "", hoverd: false, link: "https://github.com/Ampoi/ChatApp"},
+      {title: "KStalk", img: "https://github.com/Ampoi/ChatApp/blob/main/public/img/icons/favicon-384x384.png?raw=true", hoverd: false, link: "https://github.com/Ampoi/ChatApp"},
       {title: "KSchat", img: "", hoverd: false, link: ""},
     ]
   }}
